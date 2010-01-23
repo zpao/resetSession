@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://resetSession/locale/resetSession.dtd">
+
+<overlay id="resetSession-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+          src="chrome://resetSession/content/resetSession.js"/>
+
+  <menupopup id="menu_FilePopup">
+    <menuitem id="menu_ResetSession"
+              insertafter="menu_close"
+              label="&resetSessionCmd.label;"
+              oncommand="resetSession();"/>
+  </menupopup>
+</overlay>
+
